@@ -1,0 +1,242 @@
+github      _ Repository                  
+windows     - Folder
+Linux       - Directory    
+
+
+echo "# july2023shoe" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+#git branch -M main
+git remote add origin https://github.com/rushiinfotech369/july2023shoe.git
+git push -u origin main 
+
+
+ERROR1:
+
+RushikeshN@DESKTOP-4L64IR7 MINGW64 ~/Desktop/shoe
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+
+Run
+
+  git config --global user.email "rushikeshn@xyz.com"
+  git config --global user.name "Rushi"
+
+##############################################
+
+Git Task1
+
+.Install git
+2.Create Github account?
+3.Create 10 folders with data in your local and push all the data to github repositories
+
+
+Git Class2
+
+colloboration acesses
+account creation --> email id or username
+
+2.Revoke acesses
+
+
+3.Repository clone
+Repository copy
+
+clone = download
+
+4. Repo public to private
+
+5. private public to Repo
+
+6. delete repo (danger task)
+
+
+Logs filtering
+git log
+
+git log --oneline
+
+logs based on author
+git log --author=rushikeshn@xyz.com
+git log --author=Rushi
+
+2015
+
+2018
+2023
+
+2020
+
+git log --since=2018-01-01 --author=rushikeshn@xyz.com --oneline
+
+
+git log --until=2020-01-01
+
+
+
+git log --since=2018-01-01 --until=2020-01-01 --author=rushikeshn@xyz.com --oneline
+
+  458  git status
+  459  git add *
+  460  git status
+  461  git commit -m "all data done"
+  462  git remote -v
+  463  git push -u origin master
+  464  git push -u origin master -f
+  465  git config --global --unset user.name
+  466  git config --global --unset user.email
+  467  git clone https://github.com/rushiinfotech369/july2023-clothes.git
+  468  ls
+  469  cd july2023-clothes/
+  470  ls
+  471  touch 1 2 3 4 5
+  472  git add .
+  473  git status
+  474  git commit -m "only 1 file done" 1
+  475  git status
+  476  git log
+  477  git commit -m "only 2 file done" 2
+  478  git commit -m "only 3 file done" 3
+  479  git commit -m "only 4 file done" 4
+  480  git commit -m "only 5 file done" 5
+  481  git log
+  482  git log
+  483  git log --oneline
+  484  git log --author=rushikeshn@xyz.com
+  485  git log --author=Rushi
+  486  git log --since=2018-01-01
+  487  git log --since=2018-01-01 --author=rushikeshn@xyz.com
+  488  git log --since=2018-01-01 --author=rushikeshn@xyz.com --oneline
+  489  git log --until=2020-01-01
+  490  git log --until=2023-07-17
+  491  git log --since=2018-01-01 --until=2020-01-01
+  492  git log --since=2018-01-01 --until=2023-07-17
+  493  git log --since=2018-01-01 --until=2020-01-01 --author=rushikeshn@xyz.com --oneline
+  494  git log --since=2018-01-01 --until=2023-07-17 --author=rushikeshn@xyz.com --oneline
+
+################################################
+
+To create new branch
+syntax: git branch branchname
+git branch master1
+
+
+git branch
+
+# To switch branches
+git checkout branchname
+git checkout master1
+git checkout master
+
+
+To delete branch
+git branch -d master1
+git branch --delete master1
+##################################################################################
+
+Task1:
+How to delete a central branch from local repo
+
+Task:To download repo
+git clone url
+
+task2: Download only specific branch (master10) from github repo
+
+# show output of deleteing master branch deletion
+
+Task: how to download public repo
+how to download private repo
+
+############################################################################
+  451  git commit -m "version1 code is reday"
+  452  git remote add origin https://github.com/rushiinfotech369/july2023-branching.git
+  453  git push -u origin master
+  454  ls
+  455  git branch master1
+  456  git branch
+  457  git checkout master1
+  458  ls
+  459  touch mobiles
+  460  git add mobiles
+  461  git commit -m "mobiles"
+  462  git push -u origin master1
+  463  git branch master10
+  464  git branch
+  465  git checkout master10
+  466  ls
+  467  touch clothes
+  468  git add clothes
+  469  git commit -m "clothes"
+  470  git push -u origin master10
+  471  git checkout master
+  472  ls
+  473  git merge master10
+  474  ls
+  475  git branch
+  476  git branch -d master1
+  477  git branch
+  478  git checkout master10
+  479  git checkout -d master10
+  480  git checkout master10
+  481  git branch -d master10
+  482  ls
+  483  git branch
+  484  git branch -d master
+  485  git branch
+  486  git init
+  487  touch dummy
+  488  git add dummy
+  489  git coomit -m "dummy"
+  490  git commit -m "dummy"
+  491  clear
+  492  touch 1 2 3 4 5 6
+  493  git add 1
+  494  git status
+  495  git stash save "1 file saving"
+  496  git status
+  497  git stash list
+  498  git add 2
+  499  git status
+  500  git stash save "2 file aving"
+  501  git status
+  502  git statsh list
+  503  git stash list
+  504  git status
+  505  git add 3 4
+  506  git status
+  507  git stash save " 3&4 " 3
+  508  git status
+  509  git stash list
+  510  git add 5
+  511  git stash save "5"
+  512  git add 6
+  513  git stash save "6 file saving"
+  514  git stahs list
+  515  git stash list
+  516  git stash apply
+  517  git status
+  518  git stash list
+  519  git stash apply stash@{4}
+  520  git stash list
+  521  git status
+  522  git stash pop
+  523  git status
+  524  git stash list
+  525  git stash pop stash@{2}
+  526  git stash list
+  527  git status
+  528  git stash drop
+  529  git stash list
+  530  git stash drop stash@{1}
+  531  git stash list
+  532  git stash drop
+  533  git stash list
+  534  hitsory
+
+
+
+
+
+           
